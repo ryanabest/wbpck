@@ -1,25 +1,19 @@
 @import './partials/fonts';
-@import './partials/colors';
+@import './partials/variables';
 @import './partials/menu';
 
 body {
-  background-color: #fafafa;
-  color: #000;
+  background-color: $gray-background;
+  color: $black;
   margin: 0;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $mont;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-  transition: color 0.1s ease-in-out;
-
-  &.active,
-  &:hover {
-    color: $blue-highlight;
-  }
+::selection {
+  background: $blue-highlight;
+  color: $white;
 }

@@ -17,37 +17,26 @@
     justify-content: space-between;
 
     * {
-      font-family: 'Roboto Mono', monospace;
+      font-family: $rob-mono;
     }
 
-    a {
+    p {
       font-weight: 700;
-      display: inline-block;
       line-height: 50px;
-    }
-
-    #name {
-      h1 {
-        display: inline;
-        line-height: 50px;
-        letter-spacing: 0.2em;
-        font-size: 2.5rem;
-      }
-
-      img {
-        max-height: 50px;
-        vertical-align: top;
-        margin: 0 1.75em;
-      }
-    }
-
-    #menu-links {
       font-size: 2.5rem;
       letter-spacing: 0.2em;
+      display: inline;
+      text-align: center;
 
-      a {
+      &.menu-link {
         padding-left: 0.6em;
       }
+    }
+
+    img {
+      max-height: 50px;
+      vertical-align: top;
+      margin: 0 1.85em 0 1.5em;
     }
   }
 }
