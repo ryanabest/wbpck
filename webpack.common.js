@@ -16,14 +16,22 @@ module.exports = {
       // Include pug-loader to process the pug files
       {
         test: /\.pug$/,
-        use: 'pug-loader'
+        use: ['pug-loader']
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: 'asset/resource'
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource'
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/templates/index.pug',
-      favicon: './assets/favicon.png'
+      favicon: './src/images/favicon.png'
     })
   ]
 };

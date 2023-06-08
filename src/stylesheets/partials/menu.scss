@@ -1,11 +1,10 @@
-#menu {
-  margin: 5vmin auto;
+.menu {
   padding: 1em 2vw;
   width: 100%;
   max-width: 1500px;
-
-  h1, a {
-    letter-spacing: 0.2em;
+  
+  &#menu {
+    margin: 5vmin auto;
   }
 
   #top-menu {
@@ -16,13 +15,39 @@
     flex-flow: row wrap;
     align-content: space-between;
     justify-content: space-between;
-  }
 
-  #menu-links {
     * {
-      // font-family: 'Roboto Mono', monospace;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    a {
       font-weight: 700;
-      padding-left: 0.5em;
+      display: inline-block;
+      line-height: 50px;
+    }
+
+    #name {
+      h1 {
+        display: inline;
+        line-height: 50px;
+        letter-spacing: 0.2em;
+        font-size: 2.5rem;
+      }
+
+      img {
+        max-height: 50px;
+        vertical-align: top;
+        margin: 0 1.75em;
+      }
+    }
+
+    #menu-links {
+      font-size: 2.5rem;
+      letter-spacing: 0.2em;
+
+      a {
+        padding-left: 0.6em;
+      }
     }
   }
 }

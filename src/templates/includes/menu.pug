@@ -1,9 +1,10 @@
-#menu
+.menu#menu
   #top-menu
-    #name
-      h1 ryan
-      img(src="./assets/logo.png")
-      h1 best
-    #menu-links
-      p#work.menu-link.active work
-      p#about.menu-link about
+    .menu-item#name
+      a(href='/')
+        h1 ryan
+        img(src=require('../../images/logo.png'))
+        h1 best
+    .menu-item#menu-links
+      a#work.menu-link.active(href='/') work
+      a#about.menu-link(href='/about/') about

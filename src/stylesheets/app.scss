@@ -1,3 +1,5 @@
+@import './partials/fonts';
+@import './partials/colors';
 @import './partials/menu';
 
 body {
@@ -8,9 +10,16 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-// p,
-// a {
-//   font-family: 'Montserrat', sans-serif;
-// }
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+
+  &.active,
+  &:hover {
+    color: $blue-highlight;
+  }
+}
