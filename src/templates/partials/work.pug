@@ -1,0 +1,8 @@
+.projects
+  each p in projects
+    .project(id=p.id)
+      .project-title
+        p.eyebrow --#{p.eyebrow}--
+        p.title !{p.title}
+      a.project-img-link(href=p.url)
+        img(src=require(`../../images/${utils.slugify(p.eyebrow)}/${p.id}.png`))

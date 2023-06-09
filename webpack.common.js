@@ -1,5 +1,7 @@
-// const path = require('path');
+// https://www.youtube.com/playlist?list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const projects = require('./src/data/projects.json');
+const utils = require('./src/js/utils');
 
 module.exports = {
   entry: './src/js/app.js',
@@ -31,7 +33,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/templates/index.pug',
-      favicon: './src/images/favicon.png'
+      favicon: './src/images/favicon.png',
+      templateParameters: { projects, utils }
     })
   ]
 };
