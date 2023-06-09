@@ -34,7 +34,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/index.pug',
       favicon: './src/images/favicon.png',
-      templateParameters: { projects, utils }
+      templateParameters: { projects, utils, page: 'work' }
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/index.pug',
+      filename: 'about/index.html',
+      favicon: './src/images/favicon.png',
+      templateParameters: { projects, utils, page: 'about' }
     })
   ]
 };

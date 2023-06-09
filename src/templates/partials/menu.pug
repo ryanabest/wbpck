@@ -1,9 +1,10 @@
 .menu#menu
   #top-menu
     .menu-item#name
-      p ryan
-      img(src=require('../../images/logo.png'))
-      p best
+      a(href='/')
+        p ryan
+        img(src=require('../../images/logo.png'))
+        p best
     .menu-item#menu-links
-      p#work.menu-link.active work
-      p#about.menu-link about
+      a#work.menu-link(href='/', class=page==='work'?'active':'') work
+      a#about.menu-link(href='/about/', class=page==='about'?'active':'') about

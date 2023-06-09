@@ -2,3 +2,7 @@ extends partials/layout.pug
 
 block content
   .content
+    if page === 'work'
+      include content/work
+    else if page === 'about'
+      include content/about
