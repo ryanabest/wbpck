@@ -3,6 +3,30 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const projects = require('./src/data/projects.json');
 const utils = require('./src/js/utils');
 
+const plugins = [
+  new HtmlWebpackPlugin({
+    template: './src/templates/index.pug',
+    favicon: './src/images/favicon.png',
+    templateParameters: { utils, projects, title: 'ryan best', page: 'work' }
+  }),
+  new HtmlWebpackPlugin({
+    template: './src/templates/index.pug',
+    filename: 'about/index.html',
+    favicon: './src/images/favicon.png',
+    templateParameters: { utils, title: 'ryan best', page: 'about' }
+  })
+];
+
+const internalProjects = projects.filter(d => !d.url);
+internalProjects.forEach(project => {
+  plugins.push(new HtmlWebpackPlugin({
+    template: './src/templates/index.pug',
+    filename: `${project.id}/index.html`,
+    favicon: './src/images/favicon.png',
+    templateParameters: { utils, projects, title: project.title, page: project.id, project: project }
+  }));
+});
+
 module.exports = {
   entry: './src/js/app.js',
   module: {
@@ -22,17 +46,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/templates/index.pug',
-      favicon: './src/images/favicon.png',
-      templateParameters: { projects, utils, page: 'work' }
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/index.pug',
-      filename: 'about/index.html',
-      favicon: './src/images/favicon.png',
-      templateParameters: { projects, utils, page: 'about' }
-    })
-  ]
+  plugins
 };

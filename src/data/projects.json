@@ -108,6 +108,12 @@
     "url": "https://fivethirtyeight.com/features/why-biden-cant-win-on-inflation/"
   },
   {
+    "id": "2022-wnba-predictions",
+    "title": "2022 WNBA Predictions                        ",
+    "eyebrow": "FiveThirtyEight",
+    "url": "https://projects.fivethirtyeight.com/2022-wnba-predictions/"
+  },
+  {
     "id": "2022-nhl-predictions",
     "title": "2021-22 NHL Predictions",
     "eyebrow": "FiveThirtyEight",
@@ -126,16 +132,16 @@
     "url": "https://projects.fivethirtyeight.com/redistricting-2022-maps/"
   },
   {
-    "id": "2021-wnba-predictions",
-    "title": "2021 WNBA Predictions                        ",
-    "eyebrow": "FiveThirtyEight",
-    "url": "https://projects.fivethirtyeight.com/2021-wnba-predictions/"
-  },
-  {
     "id": "politics-of-whiteness",
     "title": "How The Politics Of White Liberals And White Conservatives Are Shaped By Whiteness",
     "eyebrow": "FiveThirtyEight",
     "url": "https://fivethirtyeight.com/features/how-the-politics-of-white-liberals-and-white-conservatives-are-shaped-by-whiteness/"
+  },
+  {
+    "id": "2021-wnba-predictions",
+    "title": "2021 WNBA Predictions                        ",
+    "eyebrow": "FiveThirtyEight",
+    "url": "https://projects.fivethirtyeight.com/2021-wnba-predictions/"
   },
   {
     "id": "nba-trades",
@@ -264,6 +270,11 @@
     "url": "https://www.bloomberg.com/graphics/democratic-presidential-debates-key-issues/"
   },
   {
+    "id": "drawing-discrimination",
+    "title": "Drawing Discrimination",
+    "eyebrow": "Parsons"
+  },
+  {
     "id": "trade-war-summit",
     "title": "Trump-Xi Summit at G-20 Could Save the World $1.2 Trillion",
     "eyebrow": "Bloomberg",
@@ -298,5 +309,10 @@
     "title": "Nonprofit Cancer Funding Shows Signs of Inequality",
     "eyebrow": "Bloomberg",
     "url": "https://www.bloomberg.com/news/articles/2019-07-19/nonprofit-cancer-funding-shows-signs-of-inequality#xj4y7vzkg"
+  },
+  {
+    "id": "redlining-poster",
+    "title": "New York City Redlining Poster",
+    "eyebrow": "Parsons"
   }
 ]

@@ -1,9 +1,11 @@
 @import './partials/fonts';
 @import './partials/variables';
 @import './partials/menu';
-@import './partials/projects';
+@import './partials/work';
 @import './partials/socials';
 @import './partials/about';
+@import './partials/project-content';
+@import './partials/swiper';
 
 body {
   background-color: $gray-background;
