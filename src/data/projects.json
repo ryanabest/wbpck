@@ -324,5 +324,35 @@
     "id": "migration-of-art",
     "title": "The Migration of Art",
     "eyebrow": "Parsons"
+  },
+  {
+    "id": "mind-the-gap",
+    "title": "mind the gap.",
+    "eyebrow": "Parsons"
+  },
+  {
+    "id": "met-history",
+    "title": "A History Of Collecting At The&nbsp;Met",
+    "eyebrow": "Parsons"
+  },
+  {
+    "id": "temperature-sensor",
+    "title": "Real-Time Temperature Sensor",
+    "eyebrow": "Parsons"
+  },
+  {
+    "id": "aa-meeting-finder",
+    "title": "Alcoholics Anonymous Meeting Finder",
+    "eyebrow": "Parsons"
+  },
+  {
+    "id": "diary-of-envy",
+    "title": "Diary Of Envy",
+    "eyebrow": "Parsons"
+  },
+  {
+    "id": "substantial-tableau",
+    "title": "Sub Data Dashboards",
+    "eyebrow": "Client Work"
   }
 ]

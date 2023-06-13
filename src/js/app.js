@@ -1,5 +1,4 @@
 /* eslint no-new: "off" */
-import { Navigator } from './navigator';
 import { MigrationOfArt } from './migration-of-art';
 import Swiper, { Navigation, Pagination } from 'swiper'; // core version + navigation, pagination modules:
 
@@ -27,8 +26,3 @@ if (document.querySelector('.marvel-device')) {
 }
 
 new MigrationOfArt();
-
-const nav = new Navigator();
-nav.init();
-
-console.log('hello world 2');

@@ -47,6 +47,9 @@ include ../mixins/mixins
     a.underline(href='https://mashable.com/article/the-met-museum-api/?utm_cid=mash-com-Tw-main-link') Mashable
     | , 
     a.underline(href='https://www.metmuseum.org/blogs/now-at-the-met/2018/met-collection-api') The Met
+  p
+    a.see-link.underline(href="https://github.com/ryanabest/ms1-2018/tree/master/interactivity") See the code →
+
 
 //- DATA -//
 .project-content
@@ -103,3 +106,5 @@ include ../mixins/mixins
     | The orientation of our main visualization and painting menu are rotated to better utilize scrolling.
     | A collapsable menu allows our users to decide which view to show, along with the level of detail available at each data point while they scroll.
     | Project information and visual legends are also accessible behind this menu.
+
++next_project(projects.find(d => d.id === 'mind-the-gap'))

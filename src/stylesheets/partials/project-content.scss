@@ -7,7 +7,7 @@
   h1 {
     font-family: $rob-mono;
     font-size: 4vw;
-    margin: 0px 0 5vh 0;
+    margin: 0px 0 7vh 0;
   }
 
   h2 {
@@ -192,5 +192,14 @@ img.redlining-poster {
     max-width: 600px;
     margin: 5vh auto auto auto;
     font-size: 2vh;
+  }
+}
+
+// ~~ SUBSTANTIAL TABLEAU SPECIFIC ~~ //
+#substantial-tableau-swiper-wrapper {
+  .swiper-slide {
+    img {
+      max-width: 100%;
+    }
   }
 }
