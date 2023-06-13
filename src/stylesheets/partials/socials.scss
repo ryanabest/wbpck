@@ -5,19 +5,31 @@
   max-width: 1500px;
   padding: 1em 2vw;
 
+  @include breakpoint($M) {
+    text-align: center;
+  }
+
   a {
     img {
-      height: 5vh;
-      width: 5vh;
-      margin-left: 1.5vw;
+      height: 50px;
+      width: 50px;
+      margin-left: 20px;
       margin-right: 0;
       opacity: 1;
       cursor: pointer;
+      
+      @include breakpoint($M) {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
   
       &.fivethirtyeight-thumb {
-        width: 5vh;
-        height: 4.5vh;
-        margin-bottom: 2px;
+        height: 45px;
+        @include breakpoint($M) {
+          height: 35px;
+        }
       }
 
       &.hover {

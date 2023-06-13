@@ -10,6 +10,10 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: $blue-highlight;
+
+    @include breakpoint($M) {
+      display: none;
+    }
   }
 
   .swiper-pagination-bullet-active {

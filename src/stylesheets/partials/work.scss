@@ -15,6 +15,16 @@
   background-clip: content-box;
   transition: background-color 250ms ease-in;
 
+  @include breakpoint($T) {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  @include breakpoint($M) {
+    flex: 100%;
+    max-width: 100%;
+  }
+
   .project-title {
     pointer-events: none;
     display: none;
