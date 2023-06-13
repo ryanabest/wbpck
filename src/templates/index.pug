@@ -8,3 +8,13 @@ block content
       include content/about
     else if page === 'drawing-discrimination'
       include content/drawing-discrimination
+    else if page === 'redlining-poster'
+      include content/redlining-poster
+    else if page === 'samia-design'
+      include content/samia-design
+    else if page === 'migration-of-art'
+      include content/migration-of-art
+
+  script
+    var interactivePage = {};
+    interactivePage.page = !{JSON.stringify(page)};

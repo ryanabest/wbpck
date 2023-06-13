@@ -21,6 +21,8 @@ include ../mixins/mixins
     iframe(width=560, height=315, src="https://www.youtube.com/embed/KaL8bF-1SSM?start=5324", frameborder=0, allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
   p
     a.see-link.underline(href="https://parsons.nyc/thesis-2019/") See all 2019 Parsons Data Visualization Theses →
+
+//- PROCESS -//
 .project-content
   h1 Process
   .swiper-container
@@ -45,6 +47,8 @@ include ../mixins/mixins
     | CSS / d3 / HTML / JavaScript / <a class='underline' href='https://juxtapose.knightlab.com/'>JuxtaposeJS</a> / Node / <a class='underline' href='https://gdal.org/programs/ogr2ogr.html'>ogr2ogr</a> / Pandas / Python / <a class='underline' href='https://github.com/russellgoldenberg/scrollama'>Scrollama</a> / <a target = '_blank' href='https://pypi.org/project/Shapely/'>Shapely</a> / Sketch
   p
     a.see-link.underline(href="https://github.com/ryanabest/ms2-2019/tree/master/thesis") See the code →
+
+//- DATA -//
 .project-content
   h1 Data
   p
@@ -64,6 +68,8 @@ include ../mixins/mixins
     img(src=require('../images/parsons/drawing-discrimination/data/data1.png'))
   p
     | For more detail on this data and methodology, feel free to look at the <i>Data and Methodology</i> section of the <a class='underline' href='https://github.com/ryanabest/ms2-2019/raw/master/writing/thesis/thesis.pdf'>full thesis write-up</a> for this project.
+
+//- VISUALIZATION -//
 .project-content
   h1 Visualization
   p
@@ -130,4 +136,5 @@ include ../mixins/mixins
     | Like the comparison view, users can also hover over these sparklines to see the values for the metric estimates represented in an individual year for both zones (clicked and hovered).
     | The zone(s) represented in the sparklines are visually highlighted on the map through opacity – zones that are clicked or hovered will have full opacity while all other zones are slightly&nbsp;faded.
 
+//- NEXT PROJECT -//
 +next_project(projects.find(d => d.id === 'redlining-poster'))

@@ -1,0 +1,83 @@
+// // ~~ DO THE DATA PROCESS ANIMATIONS ~~ //
+// @keyframes showOpacity {
+//   0% {
+//     opacity: 0;
+//   }
+//   48% {
+//     opacity: 0;
+//   }
+//   52% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes showDisplay {
+//   0% {
+//     visibility: hidden;
+//   }
+
+//   48% {
+//     visibility: hidden;
+//   }
+
+//   52% {
+//     visibility: visible;
+//   }
+
+//   100% {
+//     visibility: visible;
+//   }
+// }
+
+// #data-process {
+//   .process-content {
+//     .process-imgs {
+//       &#prov-text-ex-img {
+
+//       }
+//       &#python-ex-img {
+//         opacity: 0;
+//         animation-delay: 5s;
+//         animation-duration: 10s;
+//         animation-name: showOpacity;
+//         animation-iteration-count: infinite;
+//         animation-direction: alternate;
+//       }
+//       &#json-ex-img {
+//         opacity: 0;
+//         animation-delay: 10s;
+//         animation-duration: 10s;
+//         animation-name: showOpacity;
+//         animation-iteration-count: infinite;
+//         animation-direction: alternate;
+//       }
+//     }
+//   }
+
+//   .callout-text {
+//     p {
+//       &#slide-1 {
+//         visibility: visible;
+//       }
+//       &#slide-2 {
+//         visibility: hidden;
+//         animation-delay: 5s;
+//         animation-duration: 10s;
+//         animation-name: showDisplay;
+//         animation-iteration-count: infinite;
+//         animation-direction: alternate;
+//       }
+//       &#slide-3 {
+//         visibility: hidden;
+//         animation-delay: 10s;
+//         animation-duration: 10s;
+//         animation-name: showDisplay;
+//         animation-iteration-count: infinite;
+//         animation-direction: alternate;
+//       }
+//     }
+//   }
+// }
